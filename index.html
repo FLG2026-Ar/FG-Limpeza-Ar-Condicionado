@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FG Higienização de Ar Condicionado</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('https://copilot.microsoft.com/th/id/BCO.50bccd7b-ba7c-4501-a4c2-ab0081dde15f.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #ffffff;
+      overflow-y: scroll;
+    }
+
+    /* Flocos de neve */
+    .snowflake {
+      position: fixed;
+      top: -10px;
+      color: white;
+      font-size: 1em;
+      opacity: 0.8;
+      animation-name: fall;
+      animation-timing-function: linear;
+      z-index: 9999;
+    }
+
+    @keyframes fall {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(100vh); }
+    }
+
+    header {
+      background-color: rgba(0, 119, 182, 0.9);
+      color: prata;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      max-height: 150px;
+      vertical-align: middle;
+    }
+
+    header h1 {
+      display: block;
+      margin: 10px auto;
+      font-size: 32px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    }
+
+    .incentivo {
+      background-color: rgba(144, 224, 239, 0.85);
+      padding: 15px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 8px;
+      margin: 20px;
+    }
+
+    .whatsapp {
+      text-align: center;
+      margin: 20px;
+    }
+
+    .whatsapp a {
+      text-decoration: none;
+      color: white;
+      background-color: #25D366;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 18px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    .fotos {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 20px;
+    }
+
+    .fotos img {
+      width: 300px;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+
+    .video-section {
+      margin: 40px;
+      text-align: center;
+    }
+
+    .video-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .video-box {
+      flex: 1;
+      max-width: 400px;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+    }
+
+    iframe {
+      width: 100%;
+      height: 225px;
+      border-radius: 8px;
+    }
+
+    .legenda {
+      margin-top: 10px;
+      font-size: 1.1em;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://i.postimg.cc/hvrDFZqF/Circular-logo-design-on-black-2K-20260910215515.png" alt="Logo FG Higienização">
+    <h1>FG Higienização de Ar Condicionado</h1>
+  </header>
+
+  <div class="incentivo">
+    Respire melhor! Contrate já a higienização do seu ar condicionado.
+  </div>
+
+  <div class="whatsapp">
+    <a href="https://wa.me/5519994206758" target="_blank">
+      <img width="28" height="28" src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="WhatsApp"/>
+      Fabio - WhatsApp
+    </a>
+  </div>
+
+  <div class="fotos">
+    <img src="https://i.postimg.cc/P5g3pQD1/folha-1-Hig-AR.png" alt="Higienização de Ar Condicionado">
+    <img src="https://i.postimg.cc/8z2KJmvM/Folha-2-HIg-AR.png" alt="Equipe realizando higienização">
+  </div>
+
+  <div class="fotos">
+    <img src="https://i.postimg.cc/Lsjyzgkb/dreamina-2026-01-29-7145-Poster-3D-em-tela-dividida-a-esquerda-u.jpg" alt="Higienização de Ar Condicionado">
+    <img src="https://i.postimg.cc/TPkcjjLS/DESMONTAGEM.jpg">
+  </div>
+
+  <div class="video-section">
+    <h2>Veja como realizamos a higienização:</h2>
+    <div class="video-container">
+      <div class="video-box">
+        <iframe src="https://www.youtube.com/embed/UjFFBLev8iw?si=GvTgVbj-sg6mssEe" 
+          title="Processo de Higienização - Hortolândia" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen>
+        </iframe>
+
+        <p class="legenda">Processo de Higienização - Hortolândia</p>
+      </div>
+      <div class="video-box">
+        <iframe width="560"
+         height="315" 
+         src="https://www.youtube-nocookie.com/embed/UjFFBLev8iw?si=GvTgVbj-sg6mssEe"
+         title="Processo de Higienização - Campinas" 
+         frameborder="0" 
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture
+        <p class="legenda">Processo de Higienização - Campinas</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script para efeito de neve -->
+  <script>
+    function createSnowflake() {
+      const snowflake = document.createElement('div');
+      snowflake.classList.add('snowflake');
+      snowflake.textContent = '❄';
+      snowflake.style.left = Math.random() * window.innerWidth + 'px';
+      snowflake.style.fontSize = (Math.random() * 10 + 10) + 'px';
+      snowflake.style.animationDuration = (Math.random() * 5 + 5) + 's';
+      document.body.appendChild(snowflake);
+      setTimeout(() => snowflake.remove(), 10000);
+    }
+    setInterval(createSnowflake, 200);
+  </script>
+</body>
+</html>
