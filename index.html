@@ -15,50 +15,36 @@
       overflow-y: scroll;
     }
 
-    /* Flocos de neve */
-    .snowflake {
-      position: fixed;
-      top: -10px;
-      color: white;
-      font-size: 1em;
-      opacity: 0.8;
-      animation-name: fall;
-      animation-timing-function: linear;
-      z-index: 9999;
-    }
-
-    @keyframes fall {
-      0% { transform: translateY(0); }
-      100% { transform: translateY(100vh); }
-    }
-
     header {
-      background-color: rgba(0, 119, 182, 0.9);
-      color: prata;
+      background-color: rgba(0, 51, 102, 0.95); /* Azul escuro profissional */
+      color: #ffffff;
       padding: 20px;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     header img {
-      max-height: 150px;
-      vertical-align: middle;
+      max-height: 80px;
+      margin-right: 20px;
     }
 
     header h1 {
-      display: block;
-      margin: 10px auto;
-      font-size: 32px;
-      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+      font-size: 28px;
+      margin: 0;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
     }
 
     .incentivo {
-      background-color: rgba(144, 224, 239, 0.85);
+      background-color: rgba(255, 255, 255, 0.9);
+      color: #003366;
       padding: 15px;
       text-align: center;
       font-size: 20px;
       font-weight: bold;
       border-radius: 8px;
-      margin: 20px;
+      margin: 20px auto;
+      max-width: 800px;
     }
 
     .whatsapp {
@@ -74,46 +60,53 @@
       border-radius: 5px;
       font-size: 18px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
     }
 
     .fotos {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      margin: 20px;
+      margin: 20px auto;
+      max-width: 1000px;
     }
 
     .fotos img {
-      width: 300px;
+      width: 280px;
+      height: auto;
       margin: 10px;
       border-radius: 8px;
+      object-fit: cover;
       box-shadow: 0 0 10px rgba(0,0,0,0.4);
     }
 
     .video-section {
-      margin: 40px;
+      margin: 40px auto;
       text-align: center;
+      max-width: 1000px;
     }
 
     .video-container {
       display: flex;
       justify-content: center;
-      gap: 20px;
+      gap: 30px;
       flex-wrap: wrap;
     }
 
     .video-box {
       flex: 1;
-      max-width: 400px;
-      background: rgba(0, 0, 0, 0.5);
+      max-width: 380px;
+      background: rgba(255, 255, 255, 0.1);
       border-radius: 10px;
       padding: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
     }
 
     iframe {
       width: 100%;
-      height: 225px;
+      height: 220px;
       border-radius: 8px;
     }
 
@@ -121,6 +114,24 @@
       margin-top: 10px;
       font-size: 1.1em;
       font-weight: bold;
+      color: #ffffff;
+    }
+
+    /* Flocos de neve */
+    .snowflake {
+      position: fixed;
+      top: -10px;
+      color: white;
+      font-size: 1em;
+      opacity: 0.8;
+      animation-name: fall;
+      animation-timing-function: linear;
+      z-index: 9999;
+    }
+
+    @keyframes fall {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(100vh); }
     }
   </style>
 </head>
@@ -146,35 +157,15 @@
     <img src="https://i.postimg.cc/8z2KJmvM/Folha-2-HIg-AR.png" alt="Equipe realizando higienização">
   </div>
 
-  <div class="fotos">
-    <img src="https://i.postimg.cc/Lsjyzgkb/dreamina-2026-01-29-7145-Poster-3D-em-tela-dividida-a-esquerda-u.jpg" alt="Higienização de Ar Condicionado">
-    <img src="https://i.postimg.cc/TPkcjjLS/DESMONTAGEM.jpg">
-  </div>
-
   <div class="video-section">
     <h2>Veja como realizamos a higienização:</h2>
     <div class="video-container">
       <div class="video-box">
-        <iframe 
-          src="https://www.youtube.com/embed/P8Yw1E-Bo-U" 
-          title="Processo de Higienização - Hortolândia" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          referrerpolicy="strict-origin-when-cross-origin" 
-          allowfullscreen>
-        </iframe>
+        <iframe src="https://www.youtube.com/embed/P8Yw1E-Bo-U" title="Processo de Higienização - Hortolândia" frameborder="0" allowfullscreen></iframe>
         <p class="legenda">Processo de Higienização - Hortolândia</p>
       </div>
-
       <div class="video-box">
-        <iframe 
-          src="https://www.youtube.com/embed/UjFFBLev8iw?si=GvTgVbj-sg6mssEe" 
-          title="Processo de Higienização - Campinas" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          referrerpolicy="strict-origin-when-cross-origin" 
-          allowfullscreen>
-        </iframe>
+        <iframe src="https://www.youtube.com/embed/UjFFBLev8iw?si=GvTgVbj-sg6mssEe" title="Processo de Higienização - Campinas" frameborder="0" allowfullscreen></iframe>
         <p class="legenda">Processo de Higienização - Campinas</p>
       </div>
     </div>
